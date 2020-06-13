@@ -1,0 +1,19 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:858808839275:function:5a0e792a-bdce-4068-a8a0-b61a0cf8b8d2:Release_0"
+        },
+        "interfaces": []
+      }
+    },
+    "publishingInformation": {
+      "locales": {
+        "it-IT": {
+          "name": "AssistantPC"
+        }
+      }
+    }
+  }
+}

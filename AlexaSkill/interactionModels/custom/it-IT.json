@@ -1,0 +1,96 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "p. c.",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "NetflixSearchIntent",
+          "slots": [
+            {
+              "name": "movie",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "cerca {movie}",
+                "{movie}"
+              ]
+            }
+          ],
+          "samples": [
+            "vai su netflix e cerca {movie}",
+            "apri netflix e cerca {movie}",
+            "cerca su netflix {movie}"
+          ]
+        },
+        {
+          "name": "PowerOffIntent",
+          "slots": [],
+          "samples": [
+            "spegni computer",
+            "spegni il computer",
+            "spegni p. c. "
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "NetflixSearchIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "movie",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.817841947292.291346482733"
+              }
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.891373084030.791945380721",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Che cosa vuoi cercare?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.817841947292.291346482733",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Che cosa vuoi cercare?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "6"
+}
