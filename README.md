@@ -28,10 +28,10 @@ Server:
 - Go to Server/helpers folder
 - Create a new python file "credential" and insert your 'AWS DynamoDB keys' and, optionally, your 'Netflix credentials'
 - Download "driver" for selenium and change paths in "helpers/BrowseDriver.py"
-- ```
-	cd Server/
-	python -m venv venv
-	source venv/bin/activate/
-	pip install -r requirements.txt
-	python main.py
+- ``` bash
+	$ cd Server/
+	$ python -m venv venv
+	$ source venv/bin/activate/
+	$ pip install -r requirements.txt
+	$ python main.py
 	```
